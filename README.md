@@ -16,7 +16,7 @@ You will find:
 
 ## Install instructions
 
-To run the jupyter notebook, you will need a new `conda` environment with all of the dependices.
+To run the Jupyter Notebook, you will need a new `conda` environment with all of the dependices.
 
 First, clone or download this repository to your local machine.
 
@@ -38,7 +38,7 @@ then issue
 
 `> jupyter notebook &`
 
-which will open a browser window in the Jupyter explorer. Navigate to the `*.ipynb` file you are interested in looking at within this repo and click it.
+which will open a browser window in the Jupyter explorer. Navigate to the `QVR_example.ipynb` and click it.
 
 From the top drop-down menu, select `kernel > change kernel > QVR`. You are now good to go!
 
