@@ -6,7 +6,7 @@
 
 </div>
 
-This repository contains an explicit code demonstration for the Quantum Variational Rewinding (QVR) algorithm as proposed in the article <www.insert.url>
+This repository contains an explicit code demonstration for the Quantum Variational Rewinding (QVR) algorithm as proposed in the article <https://arxiv.org/abs/2210.16438>
 
 You will find:
 
