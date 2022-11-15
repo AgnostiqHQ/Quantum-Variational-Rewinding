@@ -65,7 +65,7 @@ PennyLane==0.26.0
 PennyLane-Lightning==0.26.1
 pexpect==4.8.0
 pickleshare==0.7.5
-Pillow==9.2.0
+Pillow==9.3.0
 prompt-toolkit==3.0.31
 psutil==5.9.3
 ptyprocess==0.7.0
