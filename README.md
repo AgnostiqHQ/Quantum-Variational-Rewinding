@@ -6,9 +6,14 @@
 
 </div>
 
-This repository contains an explicit code demonstration for the Quantum Variational Rewinding (QVR) algorithm as proposed in the article <https://arxiv.org/abs/2210.16438>
 
-You will find:
+Author: Jack S. Baker
+
+Email: <jack@agnostiq.ai>
+
+This repository contains an explicit code demonstration for the Quantum Variational Rewinding (QVR) algorithm as proposed in the article <https://arxiv.org/abs/2210.16438>.
+
+In this repository, you will find:
 
 1. A Jupyter notebook (`QVR_example.ipynb`) employing QVR to detect anomalous behaviour in cryptocurrency time series data (i.e, a local simulation of the cryptocurrency case in the article) and to detect anomalous behaviour in the synthetic univariate data from the article (i.e. the didactic toy example from the paper)
 
