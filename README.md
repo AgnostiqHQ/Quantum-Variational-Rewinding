@@ -9,7 +9,7 @@
 
 Author: Jack S. Baker
 
-Email: <jack@agnostiq.ai>
+Email: <research@agnostiq.ai>
 
 This repository contains an explicit code demonstration for the Quantum Variational Rewinding (QVR) algorithm as proposed in the article <https://arxiv.org/abs/2210.16438>.
 
