@@ -21,6 +21,8 @@ In this repository, you will find:
 
 ## Install instructions
 
+The code in this repository supports Mac and Linux operating systems.
+
 To run the Jupyter Notebook, you will need a new `conda` environment with all of the dependices.
 
 First, clone or download this repository to your local machine.
