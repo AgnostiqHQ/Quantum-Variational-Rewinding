@@ -52,7 +52,7 @@ From the top drop-down menu, select `kernel > change kernel > QVR`. You are now 
 
 ### Start Covalent
 
-After successfully creating the conda environment, the Covalent server can be started as follows
+After successfully creating (and activating) the conda environment, the Covalent server can be started byt entering the below command in the terminal window
 
 ```bash
 covalent start --ignore-migrations
