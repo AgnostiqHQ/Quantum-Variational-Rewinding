@@ -21,6 +21,8 @@ In this repository, you will find:
 
 ## Install instructions
 
+### 1: Install the Conda environment
+
 To run the Jupyter Notebook, you will need a new `conda` environment with all of the dependices.
 
 First, clone or download this repository to your local machine.
@@ -29,35 +31,54 @@ Next, if you don't already have conda, navigate to <https://conda.io/projects/co
 
 In a terminal window, navigate to root directory of this repo (`~QuantumVariationaRewinding`) and issue
 
-`> conda env create -f environment.yml`
+```bash
+conda env create -f environment.yml
+```
 
 This will install the `QVR` environment. Let's activate it
 
-`> conda activate QVR`
+```bash
+conda activate QVR
+```
 
-If you are confident with making this environment visible to your existing Jupyter Notebook viewer, you are done! If not, please continue with
-
-`> python -m ipykernel install --user --name=QVR`
-
-then issue
-
-`> jupyter notebook &`
-
-which will open a browser window in the Jupyter explorer. Navigate to the `QVR_example.ipynb` and click it.
-
-From the top drop-down menu, select `kernel > change kernel > QVR`. You are now good to go!
-
-
-### Start Covalent
+### 2: Starting Covalent
 
 After successfully creating the conda environment, the Covalent server can be started as follows
 
 ```bash
-covalent start --ignore-migrations
+covalent start
 ```
 
-Covalent can optionally be started in debug mode for more verbose logging as follows
+If prompted, migrate the databases
 
 ```bash
-covalent start -d --ignore-migrations
+covalent db migrate
 ```
+
+If you run into problems starting the Covalent server, please try purging Covalent
+
+```bash
+covalent purge -Hy
+```
+
+this will purge any old files and directories created by Covalent giving you a fresh start. This, however, should be used sparingly as it also purges the Covalent database. Once purged, try `covalent start` once more.
+
+### 3: Launching the notebook
+
+If you are comfortable using the newly installed environment in your own jupyter notebook extension (VSCode etc.), then you are done and can skip this step. If not, follow the below instructions to launch a standard Jupyter Notebook from the command line. 
+
+We first need to make the kernel visible to Jupyter
+
+```bash
+python -m ipykernel install --user --name=QVR
+```
+
+then launch the notebook
+
+```bash
+jupyter notebook
+```
+
+which will open a browser window in the Jupyter explorer. Navigate to the `QVR_example.ipynb` and click it.
+
+From the top drop-down menu, select `kernel > change kernel > QVR`. You are now good to go!
