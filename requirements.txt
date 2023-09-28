@@ -5,4 +5,4 @@ PennyLane==0.27.0
 PennyLane-Lightning==0.27.0
 pytorch-minimize @ git+https://github.com/gngdb/pytorch-minimize.git@7cd5e1ffa79d77ab90935b3d4bde4ac7387d49ba
 scikit-learn==1.2.0
-torch==1.13.0
+torch==1.13.1
